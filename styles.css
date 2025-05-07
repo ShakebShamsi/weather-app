@@ -1,0 +1,120 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #F1F5F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.015);
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #00FFFF;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #F1F5F9;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #94A3B8;
+}
+
+input[type="text"]:focus {
+    border-color: #00FFFF;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff00cc, #3333ff);
+    border: none;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ff33cc, #5555ff);
+}
+
+button:focus {
+    outline: 2px solid #00FFFF;
+    outline-offset: 2px;
+}
+
+#weather-info {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #A5F3FC;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: #F87171;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
