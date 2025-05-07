@@ -27,7 +27,7 @@ A sleek and modern weather application built with **HTML**, **CSS**, and **JavaS
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   (https://github.com/ShakebShamsi/weather-app.git)
    cd weather-app
 
 📁 Project Structure
